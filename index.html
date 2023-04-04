@@ -9,5 +9,20 @@
 </head>
 <body>
     <img src="./assets/Improvio Website Image.png" alt="Improvio Landing Page Image"/>
+    <div id="dummyWrapper">
+        <p>Please understand: this desktop website prototype was for early showcasing purposes only & contains no functionality. 🎓</p>
+    </div>
+
+    <script>
+        const wrapper = document.getElementById('dummyWrapper');
+
+        wrapper.addEventListener('click', () => {
+            wrapper.style.bottom = '-80px';
+        })
+
+        setTimeout(() => {
+            wrapper.style.bottom = '20px';
+        }, 1000)
+    </script>
 </body>
 </html>
